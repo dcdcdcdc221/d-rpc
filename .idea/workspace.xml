@@ -4,14 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="" />
+    <list default="true" id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-easy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/model/RPCRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/model/RPCRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/model/RPCResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/model/RPCResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/registry/LocalRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/registry/LocalRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/serializer/JdkSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/serializer/JdkSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/serializer/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/serializer/Serializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/HttpServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/VertxHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/VertxHttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/EasyProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/EasyProviderExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deng/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deng/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -29,12 +61,43 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-1.8",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
+  </component>
+  <component name="RunManager">
+    <configuration name="EasyProviderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.deng.provider.EasyProviderExample" />
+      <module name="example-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.deng.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EasyProviderExample" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,8 +107,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712542314424</updated>
-      <workItem from="1712542315781" duration="1000" />
+      <workItem from="1712542315781" duration="13790000" />
+      <workItem from="1712642317874" duration="11268000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
