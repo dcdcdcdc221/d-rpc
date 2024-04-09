@@ -32,9 +32,9 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
             byte[] bytes = body.getBytes();
             RPCRequest rpcRequest = null;
             try {
-                RPCRequest deserialize = serializer.deserialize(bytes, rpcRequest.getClass());
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+                serializer.deserialize(bytes, rpcRequest.getClass());
+            } catch (Exception e) {
+                e.printStackTrace();
             }
             //构造响应结果对象
             RPCResponse rpcResponse = new RPCResponse();

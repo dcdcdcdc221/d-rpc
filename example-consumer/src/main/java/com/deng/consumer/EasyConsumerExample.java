@@ -9,7 +9,7 @@ import com.deng.example.common.service.UserService;
 public class EasyConsumerExample {
     public static void main(String[] args) {
         //todo 需要获取UserService的实现类对象
-        UserService userService = null;
+        UserService userService = new UserServiceProxy();
         User user = new User();
         user.setName("d");
         //调用，获取user对象
