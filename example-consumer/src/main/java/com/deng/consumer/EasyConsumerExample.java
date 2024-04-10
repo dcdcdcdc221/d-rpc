@@ -1,5 +1,7 @@
 package com.deng.consumer;
 
+import com.deng.drpc.proxy.ServiceProxyFactory;
+import com.deng.drpc.proxy.UserServiceProxy;
 import com.deng.example.common.model.User;
 import com.deng.example.common.service.UserService;
 
@@ -9,7 +11,7 @@ import com.deng.example.common.service.UserService;
 public class EasyConsumerExample {
     public static void main(String[] args) {
         //todo 需要获取UserService的实现类对象
-        UserService userService = null;
+        UserService userService = (UserService) ServiceProxyFactory.getProxy(UserService.class);
         User user = new User();
         user.setName("d");
         //调用，获取user对象

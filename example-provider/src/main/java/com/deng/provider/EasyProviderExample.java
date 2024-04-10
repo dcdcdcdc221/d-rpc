@@ -11,6 +11,6 @@ public class EasyProviderExample {
         LocalRegistry.register(UserService.class.getName(), UserServiceImpl.class);
         //启动Web服务
         VertxHttpServer vertxHttpServer = new VertxHttpServer();
-        vertxHttpServer.doStart(8080);
+        vertxHttpServer.doStart(8081);
     }
 }
