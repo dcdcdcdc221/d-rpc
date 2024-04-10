@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/model/RPCRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/model/RPCRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/model/RPCResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/model/RPCResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/registry/LocalRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/registry/LocalRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/serializer/JdkSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/serializer/JdkSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/serializer/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/serializer/Serializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/HttpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/HttpServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/VertxHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/VertxHttpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/EasyProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/EasyProviderExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deng/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deng/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712542314424</updated>
       <workItem from="1712542315781" duration="13790000" />
-      <workItem from="1712642317874" duration="11268000" />
+      <workItem from="1712642317874" duration="12402000" />
     </task>
     <servers />
   </component>
