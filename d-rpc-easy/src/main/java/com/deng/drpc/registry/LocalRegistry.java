@@ -10,31 +10,35 @@ public class LocalRegistry {
     /**
      * 注册信息存储
      */
-    private static final Map<String,Class<?>> map = new ConcurrentHashMap<>();
+    private static final Map<String, Class<?>> MAP = new ConcurrentHashMap<>();
 
     /**
-     *注册服务
-     * @param serviceName
-     * @param implClass
+     * 注册
+     * 注册服务
+     *
+     * @param serviceName 服务名称
+     * @param implClass   IMPL 类
      */
-    public static void register(String serviceName, Class<?> implClass){
-        map.put(serviceName, implClass);
+    public static void register(String serviceName, Class<?> implClass) {
+        MAP.put(serviceName, implClass);
     }
 
     /**
      * 获取服务
-     * @param serviceName
-     * @return
+     *
+     * @param serviceName 服务名称
+     * @return {@link Class}<{@link ?}>
      */
-    public static Class<?> get(String serviceName){
-        return map.get(serviceName);
+    public static Class<?> get(String serviceName) {
+        return MAP.get(serviceName);
     }
 
     /**
      * 删除服务
-     * @param serviceName
+     *
+     * @param serviceName 服务名称
      */
-    public static void remove(String serviceName){
-        map.remove(serviceName);
+    public static void remove(String serviceName) {
+        MAP.remove(serviceName);
     }
 }

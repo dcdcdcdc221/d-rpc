@@ -78,7 +78,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
 
         try {
             //序列化
-            byte[] serialize = serializer.serialize(httpServerResponse);
+            byte[] serialize = serializer.serialize(response);
             httpServerResponse.end(Buffer.buffer(serialize));
         }catch (IOException e) {
             e.printStackTrace();

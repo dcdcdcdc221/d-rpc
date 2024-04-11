@@ -12,7 +12,7 @@ import com.deng.example.common.service.UserService;
 
 import java.io.IOException;
 
-public class UserServiceProxy  implements UserService {
+/**public class UserServiceProxy  implements UserService {
     @Override
     public User getUser(User user) {
         //序列化
@@ -49,3 +49,4 @@ public class UserServiceProxy  implements UserService {
         return null;
     }
 }
+*/

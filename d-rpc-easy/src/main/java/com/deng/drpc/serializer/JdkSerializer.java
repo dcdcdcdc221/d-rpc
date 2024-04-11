@@ -6,11 +6,12 @@ public class JdkSerializer implements Serializer{
 
 
     /**
+     * 序列 化
      * 序列化
-     * @param object
-     * @return
-     * @param <T>
-     * @throws IOException
+     *
+     * @param object 对象
+     * @return {@link byte[]}
+     * @throws IOException IO异常
      */
     @Override
     public <T> byte[] serialize(T object) throws IOException {
@@ -23,21 +24,21 @@ public class JdkSerializer implements Serializer{
 
     /**
      * 反序列化
-     * @param bytes
-     * @param type
-     * @return
-     * @param <T>
-     * @throws IOException
+     *
+     * @param bytes 字节
+     * @param type  类型
+     * @return {@link T}
+     * @throws IOException IO异常
      */
     @Override
     public <T> T deserialize(byte[] bytes, Class<T> type) throws IOException {
-        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(bytes);
-        ObjectInputStream objectInputStream = new ObjectInputStream(byteArrayInputStream);
+        ByteArrayInputStream inputStream = new ByteArrayInputStream(bytes);
+        ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
         try {
             return (T) objectInputStream.readObject();
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
-        }finally {
+        } finally {
             objectInputStream.close();
         }
     }
