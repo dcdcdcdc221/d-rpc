@@ -1,5 +1,7 @@
 package com.deng.consumer;
 
+import com.deng.drpc.config.ConfigUtils;
+import com.deng.drpc.config.RpcConfig;
 import com.deng.drpc.proxy.ServiceProxyFactory;
 import com.deng.example.common.model.User;
 import com.deng.example.common.service.UserService;
@@ -10,6 +12,8 @@ import com.deng.example.common.service.UserService;
 public class EasyConsumerExample {
     public static void main(String[] args) {
         //todo 需要获取UserService的实现类对象
+        RpcConfig rpc = ConfigUtils.loadConfig(RpcConfig.class, "rpc");
+        System.out.println(rpc);
         ServiceProxyFactory serviceProxyFactory = new ServiceProxyFactory();
         UserService userService = serviceProxyFactory.getProxy(UserService.class);
         User user = new User();

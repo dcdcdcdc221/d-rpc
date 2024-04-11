@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/d-rpc-easy" />
+    <file type="web" url="file://$PROJECT_DIR$/d-rpc-core" />
     <file type="web" url="file://$PROJECT_DIR$/example-common" />
     <file type="web" url="file://$PROJECT_DIR$/example-consumer" />
     <file type="web" url="file://$PROJECT_DIR$/example-provider" />
@@ -11,6 +11,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/d-rpc-core/pom.xml" />
       </list>
     </option>
   </component>
