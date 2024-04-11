@@ -35,5 +35,5 @@ public class RPCRequest implements Serializable {
     /**
      * 参数列表
      */
-    private Object args;
+    private Object[] args;
 }
