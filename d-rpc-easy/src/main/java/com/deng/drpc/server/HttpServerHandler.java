@@ -32,7 +32,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
             byte[] bytes = body.getBytes();
             RPCRequest rpcRequest = null;
             try {
-                serializer.deserialize(bytes, rpcRequest.getClass());
+                rpcRequest = serializer.deserialize(bytes, rpcRequest.getClass());
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -44,6 +44,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
                 doResponse(request,rpcResponse,serializer);
                 return;
             }
+            System.err.println("rpcRequest:" + rpcRequest.toString());
             try{
                 //获取要调用的服务实现类，通过反射调用
                 Class<?> implClass = LocalRegistry.get(rpcRequest.getServiceName());
