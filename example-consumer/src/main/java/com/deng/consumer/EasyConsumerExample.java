@@ -13,6 +13,7 @@ public class EasyConsumerExample {
     public static void main(String[] args) {
         //todo 需要获取UserService的实现类对象
         RpcConfig rpc = ConfigUtils.loadConfig(RpcConfig.class, "rpc");
+
         System.out.println(rpc);
         ServiceProxyFactory serviceProxyFactory = new ServiceProxyFactory();
         UserService userService = serviceProxyFactory.getProxy(UserService.class);

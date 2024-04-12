@@ -12,7 +12,7 @@
         <module>example-consumer</module>
         <module>example-common</module>
         <module>example-provider</module>
-        <module>d-rpc-easy</module>
+        <module>d-rpc-core</module>
     </modules>
 
     <properties>
