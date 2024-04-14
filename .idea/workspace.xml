@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="20240111_2" />
+    <list default="true" id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="20240111_2">
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/MockServiceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/ConsumerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/RpcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/RpcApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RpcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-common/src/main/java/com/deng/example/common/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-common/src/main/java/com/deng/example/common/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,16 +45,28 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Application.EasyConsumerExample">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\project\d-rpc\d-rpc-core\src\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ConsumerExample">
+    <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.deng.consumer.ConsumerExample" />
+      <module name="example-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.deng.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EasyConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.deng.consumer.EasyConsumerExample" />
       <module name="example-consumer" />
@@ -83,10 +106,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EasyConsumerExample" />
+        <item itemvalue="Application.ConsumerExample" />
         <item itemvalue="Application.EasyProviderExample" />
+        <item itemvalue="Application.EasyConsumerExample" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
@@ -126,9 +161,9 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/UserServiceProxy.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/ConsumerExample.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
