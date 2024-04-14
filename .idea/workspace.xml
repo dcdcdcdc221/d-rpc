@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="20240111_2">
-      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/RpcApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/ConfigUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RpcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/constant/RpcConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/model/RPCRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/RPCRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/model/RPCResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/RPCResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/proxy/ProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ProxyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/proxy/ServiceProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/proxy/UserServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/UserServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/registry/LocalRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/LocalRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/serializer/JdkSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/JdkSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/serializer/Serializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/Serializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/server/HttpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/server/HttpServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/server/VertxHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/server/VertxHttpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-easy/src/main/java/com/deng/drpc/test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/EasyProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/EasyProviderExample.java" afterDir="false" />
-    </list>
+    <list default="true" id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="20240111_2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,19 +83,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.EasyConsumerExample" />
@@ -143,6 +105,8 @@
       <workItem from="1712670268994" duration="3901000" />
       <workItem from="1712799604246" duration="13851000" />
       <workItem from="1712844986073" duration="2914000" />
+      <workItem from="1713000497106" duration="2031000" />
+      <workItem from="1713078121592" duration="694000" />
     </task>
     <servers />
   </component>
