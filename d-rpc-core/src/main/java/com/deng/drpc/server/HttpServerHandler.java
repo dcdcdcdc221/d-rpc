@@ -1,11 +1,12 @@
 package com.deng.drpc.server;
 
 
+import com.deng.drpc.RpcApplication;
 import com.deng.drpc.model.RPCRequest;
 import com.deng.drpc.model.RPCResponse;
 import com.deng.drpc.registry.LocalRegistry;
-import com.deng.drpc.serializer.JdkSerializer;
 import com.deng.drpc.serializer.Serializer;
+import com.deng.drpc.serializer.SerializerFactory;
 import io.vertx.core.Handler;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.http.HttpServerRequest;
@@ -22,7 +23,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
     @Override
     public void handle(HttpServerRequest request) {
         //指定序列化器
-        Serializer serializer = new JdkSerializer();
+        final Serializer serializer = SerializerFactory.getInstance(RpcApplication.getRpcConfig().getSerializer());
 
         //记录日志
         System.out.println("Received request: " + request.method() + request.uri());
