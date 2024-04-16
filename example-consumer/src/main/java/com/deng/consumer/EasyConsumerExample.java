@@ -10,21 +10,24 @@ import com.deng.example.common.service.UserService;
  * 简易服务消费者示例
  */
 public class EasyConsumerExample {
-    public static void main(String[] args) {
-        //todo 需要获取UserService的实现类对象
-        RpcConfig rpc = ConfigUtils.loadConfig(RpcConfig.class, "rpc");
 
-        System.out.println(rpc);
+    public static void main(String[] args) {
         ServiceProxyFactory serviceProxyFactory = new ServiceProxyFactory();
+        // 动态代理
         UserService userService = serviceProxyFactory.getProxy(UserService.class);
         User user = new User();
-        user.setName("捞王");
-        //调用，获取user对象
-        User newUser = userService.getUser(user);
-        if(newUser != null){
-            System.out.println(newUser.getName());
-        }else {
-            System.out.println("user == null");
+        user.setName("我是聪！！！！");
+        // 调用
+        for (int i = 0; i < 10; i++) {
+            User newUser = userService.getUser(user);
+            if (newUser != null) {
+                System.out.println("我是name啊"+newUser.getName());
+            } else {
+                System.out.println("user == null");
+            }
         }
+        long number = userService.getNumber();
+        System.out.println(number);
+
     }
 }

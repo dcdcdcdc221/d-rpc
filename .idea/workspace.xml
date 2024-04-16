@@ -4,9 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="20240111_2">
+    <list default="true" id="86555398-e4e0-4d99-b8f4-ba599ebbcab0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/HessianSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/JsonSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/KryoSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/SerializerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/SerializerKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/com.deng.drpc.serializer.Serializer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/custom/com.deng.drpc.serializer.Serializer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/system/com.deng.drpc.serializer.Serliazer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d-rpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/ConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/ConsumerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RpcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/server/HttpServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,39 +32,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="d" />
-      </list>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2enZTvwpWbr0FyHDOn9vaatUgdm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cong-rpc" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\work\project\d-rpc\d-rpc-core\src\main" />
-    </key>
   </component>
   <component name="RunManager" selected="Application.EasyConsumerExample">
     <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -69,7 +70,7 @@
       <module name="example-consumer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.deng.drpc.proxy.*" />
+          <option name="PATTERN" value="com.deng.consumer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,8 +91,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.deng.drpc.main" />
+    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.deng.drpc.test1" />
       <module name="d-rpc-core" />
       <extension name="coverage">
         <pattern>
@@ -118,46 +119,36 @@
       <list>
         <item itemvalue="Application.EasyConsumerExample" />
         <item itemvalue="Application.EasyProviderExample" />
+        <item itemvalue="Application.test1" />
         <item itemvalue="Application.ConsumerExample" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="" />
-      <created>1712542314424</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1712542314424</updated>
-      <workItem from="1712542315781" duration="13790000" />
-      <workItem from="1712642317874" duration="12402000" />
-      <workItem from="1712642317874" duration="11268000" />
-      <workItem from="1712670268994" duration="3901000" />
-      <workItem from="1712799604246" duration="13851000" />
-      <workItem from="1712844986073" duration="2914000" />
-      <workItem from="1713000497106" duration="2031000" />
-      <workItem from="1713078121592" duration="694000" />
-      <workItem from="1713182940429" duration="1020000" />
-      <workItem from="1713271155709" duration="989000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="20240111_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="20240111_2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/test1.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/SerializerFactory.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

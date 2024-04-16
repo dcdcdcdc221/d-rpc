@@ -1,0 +1,2 @@
+jdk = com.deng.drpc.serializer.JdkSerializer
+hessian = com.deng.drpc.serializer.HessianSerializer
