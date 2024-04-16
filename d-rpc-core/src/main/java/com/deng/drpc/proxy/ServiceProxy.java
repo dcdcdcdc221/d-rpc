@@ -16,12 +16,14 @@ import java.lang.reflect.Method;
 public class ServiceProxy implements InvocationHandler {
 
 
+
     //动态URL
     //因为是静态方法，所以设置一次值后就处处调用相等。
     private static final String URI = "http://"+ RpcApplication.getRpcConfig().getServerHost()
             + ":"+RpcApplication.getRpcConfig().getServerPort();
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        SerializerFactory serializerFactory = new SerializerFactory();
         // 指定序列化器
         final Serializer serializer = SerializerFactory.getInstance(RpcApplication.getRpcConfig().getSerializer());
 

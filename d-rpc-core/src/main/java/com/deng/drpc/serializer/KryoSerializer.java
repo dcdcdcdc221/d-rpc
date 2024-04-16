@@ -22,7 +22,7 @@ public class KryoSerializer implements Serializer{
     public <T> byte[] serialize(T object) throws IOException {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         Output output = new Output(byteArrayOutputStream);
-        KRYO_THREAD_LOCAL.get().writeObject(output,object)
+        KRYO_THREAD_LOCAL.get().writeObject(output,object);
         output.close();
         return byteArrayOutputStream.toByteArray();
     }
