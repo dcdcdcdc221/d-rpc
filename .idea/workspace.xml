@@ -6,10 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="20240111_2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/RPCRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/RPCRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/JsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/JsonSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/server/HttpServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/custom/com.deng.drpc.serializer.Serializer" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/custom/com.deng.drpc.serializer.Serializer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/ConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/ConsumerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,8 +116,8 @@
       <list>
         <item itemvalue="Application.EasyConsumerExample" />
         <item itemvalue="Application.EasyProviderExample" />
-        <item itemvalue="Application.test1" />
         <item itemvalue="Application.ConsumerExample" />
+        <item itemvalue="Application.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -123,24 +128,34 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java</url>
-          <line>127</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/SerializerFactory.java</url>
           <line>16</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

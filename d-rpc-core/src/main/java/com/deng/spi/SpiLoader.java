@@ -133,9 +133,10 @@ public class SpiLoader {
                             String className = strArray[1];
                             System.out.println("key:" + key + "className:" + className);
                             Class<?> aClass = Class.forName(className);
+                            log.info("forName执行成功");
                             System.out.println("forName执行成功");
                             keyClassMap.put(key, aClass);
-                            System.err.println("执行赋值key"+key);
+                            System.out.println("执行赋值key"+key);
                             System.out.println("keyClassMap_2:" + keyClassMap);
                         }
                     }

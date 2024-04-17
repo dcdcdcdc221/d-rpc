@@ -1,2 +1,4 @@
 kryo=com.deng.drpc.serializer.KryoSerializer
 json=com.deng.drpc.serializer.JsonSerializer
+jdk=com.deng.drpc.serializer.JdkSerializer
+hessian=com.deng.drpc.serializer.HessianSerializer
