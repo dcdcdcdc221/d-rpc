@@ -1,2 +1,2 @@
-kryo = com.deng.drpc.serializer.KryoSerializer
-json = com.deng.drpc.serializer.JsonSerializer
+kryo=com.deng.drpc.serializer.KryoSerializer
+json=com.deng.drpc.serializer.JsonSerializer
