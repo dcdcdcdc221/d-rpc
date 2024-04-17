@@ -15,6 +15,8 @@ public class ConsumerExample {
         UserService userService = ServiceProxyFactory.getProxy(UserService.class);
         User user = new User();
         user.setName("捞王");
+        System.out.println("User类型：" + user.getClass());
+        System.out.println("UserService类型_1" + userService.getClass());
         //调用
         User newUser = userService.getUser(user);
         if(newUser != null){

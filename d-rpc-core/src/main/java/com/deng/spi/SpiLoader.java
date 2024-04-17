@@ -75,16 +75,18 @@ public class SpiLoader {
         log.info("key:",key);
         System.err.println(key);
         log.error(String.format("key:%s",key));
+        System.out.println("loaderMap:" + loaderMap);;
         //打印日志
         log.info(String.format("SpiLoader: %s key = %s",tClass,key));
         if(keyClassMap == null) {
             throw new RuntimeException(String.format("SpiLoader 未加载 %s 类型",name));
         }
+        Class<?> implClass = keyClassMap.get(key);
+        System.out.println(implClass);
         if(!keyClassMap.containsKey(key)) {
             throw new RuntimeException(String.format("SpiLoader 的 %s 不存在 key = %s 的类型",tClass,key));
         }
         //获取要加载的实现类的类型
-        Class<?> implClass = keyClassMap.get(key);
         //从实例缓存中加载指定的实现类
         String className = implClass.getName();
         if(!instanceCache.containsKey(className)){
@@ -95,7 +97,7 @@ public class SpiLoader {
                 throw new RuntimeException(String.format("%s类实例化失败",className),e);
             }
         }
-        log.info(String.format("%s类实例化成功"));
+        log.info(String.format("%s类实例化成功",className));
         return (T) instanceCache.get(className);
     }
 
@@ -130,8 +132,11 @@ public class SpiLoader {
                             String key = strArray[0];
                             String className = strArray[1];
                             System.out.println("key:" + key + "className:" + className);
-                            keyClassMap.put(key, Class.forName(className,false,className.getClass().getClassLoader()));
-                            System.err.println("执行赋值key");
+                            Class<?> aClass = Class.forName(className);
+                            log.info("forName执行成功");
+                            System.out.println("forName执行成功");
+                            keyClassMap.put(key, aClass);
+                            System.out.println("执行赋值key"+key);
                             System.out.println("keyClassMap_2:" + keyClassMap);
                         }
                     }

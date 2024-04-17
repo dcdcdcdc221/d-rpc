@@ -30,7 +30,7 @@ public class RPCRequest implements Serializable {
     /**
      * 参数类型列表
      */
-    private Class[] parameterTypes;
+    private Class<?>[] parameterTypes;
 
     /**
      * 参数列表

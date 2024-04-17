@@ -7,17 +7,21 @@ import com.deng.drpc.model.RPCResponse;
 import com.deng.drpc.registry.LocalRegistry;
 import com.deng.drpc.serializer.Serializer;
 import com.deng.drpc.serializer.SerializerFactory;
+import com.deng.example.common.model.User;
 import io.vertx.core.Handler;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.http.HttpServerRequest;
 import io.vertx.core.http.HttpServerResponse;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 /**
  *Http请求处理
  */
+@Slf4j
 public class HttpServerHandler implements Handler<HttpServerRequest> {
 
     @Override
@@ -34,6 +38,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
             RPCRequest rpcRequest = null;
             try {
                 rpcRequest = serializer.deserialize(bytes, RPCRequest.class);
+                log.info("RpcRequest: " + rpcRequest);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -49,9 +54,13 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
             try{
                 //获取要调用的服务实现类，通过反射调用
                 Class<?> implClass = LocalRegistry.get(rpcRequest.getServiceName());
+
                 Method method = implClass.getMethod(rpcRequest.getMethodName(), rpcRequest.getParameterTypes());
+                log.info("methodName:" + method.getName(),"methodClass:" + method.getClass());
                 //反射调用方法
-                Object result = method.invoke(implClass.newInstance(), rpcRequest.getArgs());
+                log.info("result:"+ implClass.newInstance());
+                log.info("resultArgs:"+ rpcRequest.getArgs());
+                User result = (User) method.invoke(implClass.newInstance(), Arrays.stream(rpcRequest.getArgs()).toArray());
                 //封装返回结果
                 rpcResponse.setData(result);
                 rpcResponse.setDataType(method.getReturnType());
@@ -60,6 +69,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
             }catch (Exception e){
                 rpcResponse.setMessage(e.getMessage());
                 rpcResponse.setException(e);
+                e.printStackTrace();
             }
             //响应
             doResponse(request, rpcResponse,serializer);
