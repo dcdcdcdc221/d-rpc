@@ -3,6 +3,7 @@ package com.deng.drpc.proxy;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import com.deng.drpc.RpcApplication;
+import com.deng.drpc.config.RpcConfig;
 import com.deng.drpc.model.RPCRequest;
 import com.deng.drpc.model.RPCResponse;
 import com.deng.drpc.serializer.JdkSerializer;
@@ -48,6 +49,8 @@ public class ServiceProxy implements InvocationHandler {
             // 序列化
             assert serializer != null;
             byte[] bodyBytes = serializer.serialize(rpcRequest);
+            //从注册中心获取服务提供者地址
+            RpcConfig rpcConfig = RpcApplication.getRpcConfig();
             // 发送请求
             // todo 注意，这里地址被硬编码了（需要使用注册中心和服务发现机制解决）
             try (HttpResponse httpResponse = HttpRequest.post("http://"+ RpcApplication.getRpcConfig().getServerHost()+":"+ RpcApplication.getRpcConfig().getServerPort())

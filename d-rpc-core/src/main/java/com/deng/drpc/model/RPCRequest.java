@@ -2,6 +2,7 @@ package com.deng.drpc.model;
 
 
 
+import com.deng.drpc.constant.RpcConstant;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,6 +23,10 @@ public class RPCRequest implements Serializable {
      */
     private String ServiceName;
 
+    /**
+     * 服务版本
+     */
+    private String serviceVersion = RpcConstant.DEFAULT_SERVICE_VERSION;
     /**
      * 方法名称
      */
