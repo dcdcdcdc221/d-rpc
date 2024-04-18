@@ -70,8 +70,18 @@
             <artifactId>hessian</artifactId>
             <version>4.0.66</version>
         </dependency>
+        <dependency>
+            <groupId>io.etcd</groupId>
+            <artifactId>jetcd-core</artifactId>
+            <version>0.7.7</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>d-rpc-core</finalName>
     </build>
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 </project>

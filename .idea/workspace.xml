@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="86555398-e4e0-4d99-b8f4-ba599ebbcab0" name="Default Changelist" comment="" />
-=======
-    <list default="true" id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="20240111_2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="dcef38f9-4312-4846-809f-c23a09fad5d7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/d-rpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/RPCRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/RPCRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/JsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/JsonSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/server/HttpServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/custom/com.deng.drpc.serializer.Serializer" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/custom/com.deng.drpc.serializer.Serializer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/ConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/ConsumerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
->>>>>>> 3a0ba21772d6ea81548ec6fcbd065d64b77ca85a
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,43 +37,21 @@
   </component>
   <component name="ProjectId" id="2fEB0mxECvYxuc12aCfgubni0aK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-<<<<<<< HEAD
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cong-rpc" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RunManager" selected="Application.ConsumerExample">
-=======
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
-  }
-}]]></component>
-  <component name="RebelAgentSelection">
-    <selection>jr</selection>
-  </component>
-  <component name="RunManager" selected="Application.EasyConsumerExample">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
->>>>>>> 3a0ba21772d6ea81548ec6fcbd065d64b77ca85a
     <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.deng.consumer.ConsumerExample" />
       <module name="example-consumer" />
@@ -136,15 +106,9 @@
     </configuration>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
         <item itemvalue="Application.ConsumerExample" />
         <item itemvalue="Application.EasyProviderExample" />
         <item itemvalue="Application.EasyConsumerExample" />
-=======
-        <item itemvalue="Application.EasyConsumerExample" />
-        <item itemvalue="Application.EasyProviderExample" />
-        <item itemvalue="Application.ConsumerExample" />
->>>>>>> 3a0ba21772d6ea81548ec6fcbd065d64b77ca85a
         <item itemvalue="Application.test1" />
       </list>
     </recent_temporary>
@@ -152,12 +116,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="86555398-e4e0-4d99-b8f4-ba599ebbcab0" name="Default Changelist" comment="" />
+      <changelist id="dcef38f9-4312-4846-809f-c23a09fad5d7" name="Default Changelist" comment="" />
       <created>1713356139966</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713356139966</updated>
       <workItem from="1713356150493" duration="598000" />
+      <workItem from="1713357842972" duration="3910000" />
     </task>
     <servers />
   </component>
@@ -181,16 +146,6 @@
           <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java</url>
           <line>52</line>
           <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java</url>
