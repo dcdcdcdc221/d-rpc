@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcef38f9-4312-4846-809f-c23a09fad5d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RegistryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/ServiceMetaInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/EtcdRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/Registry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/RegistryFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/RegistryKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/RegistryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/system/com.deng.drpc.registry.Registry" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d-rpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/ConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/ConsumerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/RpcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/RpcApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RpcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/constant/RpcConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/constant/RpcConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/RPCRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/RPCRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +53,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cong-rpc" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -51,7 +63,7 @@
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Application.ConsumerExample">
+  <component name="RunManager" selected="JUnit.RegistryTest.register">
     <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.deng.consumer.ConsumerExample" />
       <module name="example-consumer" />
@@ -104,8 +116,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistryTest.register" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="d-rpc-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.deng.drpc.registry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.deng.drpc.registry" />
+      <option name="MAIN_CLASS_NAME" value="com.deng.drpc.registry.RegistryTest" />
+      <option name="METHOD_NAME" value="register" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegistryTest.register" />
         <item itemvalue="Application.ConsumerExample" />
         <item itemvalue="Application.EasyProviderExample" />
         <item itemvalue="Application.EasyConsumerExample" />
@@ -123,6 +165,7 @@
       <updated>1713356139966</updated>
       <workItem from="1713356150493" duration="598000" />
       <workItem from="1713357842972" duration="3910000" />
+      <workItem from="1713445017341" duration="3068000" />
     </task>
     <servers />
   </component>
@@ -136,21 +179,6 @@
           <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/SerializerFactory.java</url>
           <line>16</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
