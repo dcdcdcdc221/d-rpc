@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="20240111_2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/RPCRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/RPCRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/JsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/serializer/JsonSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/server/HttpServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/spi/SpiLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/custom/com.deng.drpc.serializer.Serializer" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/custom/com.deng.drpc.serializer.Serializer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/ConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/ConsumerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/deng/consumer/EasyConsumerExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +39,7 @@
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Application.EasyConsumerExample">
+  <component name="RunManager" selected="Application.ConsumerExample">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -114,9 +105,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EasyConsumerExample" />
-        <item itemvalue="Application.EasyProviderExample" />
         <item itemvalue="Application.ConsumerExample" />
+        <item itemvalue="Application.EasyProviderExample" />
+        <item itemvalue="Application.EasyConsumerExample" />
         <item itemvalue="Application.test1" />
       </list>
     </recent_temporary>
