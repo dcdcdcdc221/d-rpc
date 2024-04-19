@@ -1,5 +1,6 @@
 package com.deng.drpc.config;
 
+import com.deng.drpc.registry.Registry;
 import com.deng.drpc.serializer.Serializer;
 import com.deng.drpc.serializer.SerializerKeys;
 import lombok.Data;
@@ -40,4 +41,5 @@ public class RpcConfig {
     private String serializer = SerializerKeys.JDK;
 
     private volatile RegistryConfig registryConfig = new RegistryConfig();
+
 }

@@ -6,6 +6,7 @@ import cn.hutool.cron.CronUtil;
 import cn.hutool.cron.task.Task;
 import cn.hutool.json.JSONUtil;
 import com.deng.drpc.config.RegistryConfig;
+import com.deng.drpc.config.RpcConfig;
 import com.deng.drpc.model.ServiceMetaInfo;
 import io.etcd.jetcd.*;
 import io.etcd.jetcd.kv.GetResponse;
@@ -72,6 +73,9 @@ public class EtcdRegistry implements Registry{
                 .build();
         kvClient = client.getKVClient();
         log.info("执行检测");
+//        ByteSequence key = ByteSequence.from(registryConfig.getRegistry(), StandardCharsets.UTF_8);
+//        ByteSequence value = ByteSequence.from(registryConfig.getAddress(), StandardCharsets.UTF_8);
+
         heartBeat();
     }
 
@@ -88,6 +92,7 @@ public class EtcdRegistry implements Registry{
         ByteSequence key = ByteSequence.from(registerKey, StandardCharsets.UTF_8);
         ByteSequence value = ByteSequence.from(JSONUtil.toJsonStr(serviceMetaInfo), StandardCharsets.UTF_8);
 
+        log.info("key: " + key + " value: " +value);
         //将键值对与租约联系起来
         PutOption putOption = PutOption.builder().withLeaseId(leaseId).build();
         kvClient.put(key,value,putOption).get();
@@ -142,13 +147,24 @@ public class EtcdRegistry implements Registry{
     @Override
     public void destroy() {
         System.out.println("当前节点下线");
+        //下线节点
+        //遍历本节点所有的key
+        for(String key: localRegisterNodeKeySet){
+            try{
+                kvClient.delete(ByteSequence.from(key,StandardCharsets.UTF_8));
+            }catch (Exception e){
+                throw new RuntimeException(key + "节点下线异常");
+            }
+        }
         if(kvClient != null) {
             kvClient.close();
+            log.info("kvClient Closing");
         }else{
             System.out.println("kvClient is null");
         }
         if(client != null) {
             client.close();
+            log.info("client Closing");
         }else{
             System.out.println("client is null");
         }

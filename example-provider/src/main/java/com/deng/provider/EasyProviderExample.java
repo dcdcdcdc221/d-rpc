@@ -1,6 +1,9 @@
 package com.deng.provider;
 
 import com.deng.drpc.RpcApplication;
+import com.deng.drpc.config.RegistryConfig;
+import com.deng.drpc.config.RpcConfig;
+import com.deng.drpc.model.ServiceMetaInfo;
 import com.deng.drpc.registry.LocalRegistry;
 import com.deng.drpc.server.VertxHttpServer;
 import com.deng.example.common.service.UserService;

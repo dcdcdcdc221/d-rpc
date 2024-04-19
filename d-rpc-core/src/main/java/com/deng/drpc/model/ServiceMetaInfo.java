@@ -39,7 +39,7 @@ public class ServiceMetaInfo {
      * 获取服务端口
      * TODO 动态获取
      */
-    private int servicePort = 2380;
+    private int servicePort = 2379;
 
     /**
      * 获取服务键值名
