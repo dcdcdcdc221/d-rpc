@@ -1,1 +1,1 @@
-etcd = com.deng.drpc.registry.EtcdRegistry
+etcd=com.deng.drpc.registry.EtcdRegistry

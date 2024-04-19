@@ -22,6 +22,13 @@ public class RegistryTest {
         registry.init(registryConfig);
     }
     @Test
+    public void heartBeat() throws Exception {
+        register();
+        //阻塞 1 分钟
+        Thread.sleep(60*1000L);
+
+    }
+    @Test
     public void register() throws Exception{
         ServiceMetaInfo serviceMetaInfo = new ServiceMetaInfo();
         serviceMetaInfo.setServiceName("myService");
@@ -36,13 +43,6 @@ public class RegistryTest {
         serviceMetaInfo.setServiceAddress("localhost:1235");
         serviceMetaInfo.setServiceHost("localhost");
         serviceMetaInfo.setServicePort(1235);
-        registry.register(serviceMetaInfo);
-        serviceMetaInfo = new ServiceMetaInfo();
-        serviceMetaInfo.setServiceName("myService");
-        serviceMetaInfo.setServiceVersion("2.0");
-        serviceMetaInfo.setServiceAddress("localhost:1234");
-        serviceMetaInfo.setServiceHost("localhost");
-        serviceMetaInfo.setServicePort(1234);
         registry.register(serviceMetaInfo);
     }
     @Test

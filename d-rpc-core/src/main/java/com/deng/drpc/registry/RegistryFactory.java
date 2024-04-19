@@ -15,6 +15,8 @@ public class RegistryFactory{
      */
     private static final Registry DEFAULT_REGISTRY = new EtcdRegistry();
 
+
+
     /**
      * 获取实例
      * @param key
