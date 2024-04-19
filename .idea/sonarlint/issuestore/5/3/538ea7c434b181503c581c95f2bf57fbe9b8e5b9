@@ -1,0 +1,7 @@
+
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(š÷é¦ıÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(ÚÕ˜ÿÿÿÿÿ
+N
+java:S1874="3Remove this use of "newInstance"; it is deprecated.(å‘… úÿÿÿÿ
+N
+java:S1874?"3Remove this use of "newInstance"; it is deprecated.(şÊšÆÿÿÿÿÿ

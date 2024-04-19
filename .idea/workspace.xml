@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcef38f9-4312-4846-809f-c23a09fad5d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RegistryConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/ServiceMetaInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/EtcdRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/Registry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/RegistryFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/RegistryKeys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/RegistryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/system/com.deng.drpc.registry.Registry" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/RpcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/RpcApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RpcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/constant/RpcConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/constant/RpcConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/RPCRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/RPCRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/test1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="dcef38f9-4312-4846-809f-c23a09fad5d7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,19 +99,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RegistryTest.register" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="d-rpc-core" />
       <extension name="coverage">
@@ -165,7 +135,7 @@
       <updated>1713356139966</updated>
       <workItem from="1713356150493" duration="598000" />
       <workItem from="1713357842972" duration="3910000" />
-      <workItem from="1713445017341" duration="3068000" />
+      <workItem from="1713445017341" duration="4074000" />
     </task>
     <servers />
   </component>
