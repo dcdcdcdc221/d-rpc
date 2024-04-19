@@ -18,7 +18,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class RpcApplication {
 
+
     private static volatile RpcConfig rpcConfig;
+
 
     /**
      * 初始化

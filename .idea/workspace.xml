@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="dcef38f9-4312-4846-809f-c23a09fad5d7" name="Default Changelist" comment="" />
-=======
-    <list default="true" id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="20240111_2">
-      <change afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/service/ProviderExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="dcef38f9-4312-4846-809f-c23a09fad5d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/cache/RegistryServiceCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/RpcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/RpcApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RegistryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RegistryConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/config/RpcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/ServiceMetaInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/model/ServiceMetaInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/EtcdRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/EtcdRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/Registry.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/Registry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/RegistryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/RegistryFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/system/com.deng.drpc.registry.Registry" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/META-INF/rpc/system/com.deng.drpc.registry.Registry" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/d-rpc-core/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/EasyProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/deng/provider/EasyProviderExample.java" afterDir="false" />
     </list>
->>>>>>> c1779091eec9df8ca368c19d47f28d9e593f63b4
+    <list id="c46164fd-f829-4261-919d-b82131eb55ee" name="Changes" comment="20240111_2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,31 +41,16 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RunManager" selected="Application.ProviderExample">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EasyProviderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.deng.provider.EasyProviderExample" />
       <module name="example-provider" />
@@ -101,13 +77,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-=======
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegistryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="d-rpc-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.deng.drpc.registry.*" />
+          <option name="PATTERN" value="com.deng.drpc.registry.cache.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,7 +107,7 @@
       <module name="d-rpc-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.deng.drpc.registry.*" />
+          <option name="PATTERN" value="com.deng.drpc.registry.cache.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +119,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
->>>>>>> c1779091eec9df8ca368c19d47f28d9e593f63b4
     <configuration name="RegistryTest.register" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="d-rpc-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.deng.drpc.registry.*" />
+          <option name="PATTERN" value="com.deng.drpc.registry.cache.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,28 +172,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/RpcApplication.java</url>
-          <line>33</line>
+          <line>35</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/EtcdRegistry.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/EtcdRegistry.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/EtcdRegistry.java</url>
-          <line>196</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/d-rpc-core/src/main/java/com/deng/drpc/registry/EtcdRegistry.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

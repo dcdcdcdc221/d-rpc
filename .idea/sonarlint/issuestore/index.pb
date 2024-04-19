@@ -15,3 +15,13 @@ q
 Ad-rpc-core/src/main/java/com/deng/drpc/model/ServiceMetaInfo.java,2\e\2ec075305c20c3fc9c29225e50f59a61ed9a11a2
 B
 d-rpc-core/pom.xml,3\0\302cd357612bbc02b1091fe1f9482420a37a3304
+n
+>d-rpc-core/src/main/java/com/deng/drpc/proxy/ServiceProxy.java,0\7\07dee8bca3dab9c8bf6dd94b7bc095a134455f64
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+q
+Ad-rpc-core/src/main/java/com/deng/drpc/config/RegistryConfig.java,d\7\d72575d1207a30287d14388940dff609e904bf23
+l
+<d-rpc-core/src/main/java/com/deng/drpc/config/RpcConfig.java,b\9\b9db55d635f50a9de5b1f4e151d642809dfdf3a4
+q
+Ad-rpc-core/src/main/java/com/deng/drpc/registry/RegistryTest.java,b\2\b297aaffe6a4e9ff083354eb7bac7bb74de6105e

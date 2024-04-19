@@ -2,16 +2,17 @@ package com.deng.drpc.registry;
 
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.collection.ConcurrentHashSet;
 import cn.hutool.cron.CronUtil;
 import cn.hutool.cron.task.Task;
 import cn.hutool.json.JSONUtil;
 import com.deng.drpc.config.RegistryConfig;
-import com.deng.drpc.config.RpcConfig;
 import com.deng.drpc.model.ServiceMetaInfo;
+import com.deng.drpc.registry.cache.RegistryServiceCache;
 import io.etcd.jetcd.*;
-import io.etcd.jetcd.kv.GetResponse;
 import io.etcd.jetcd.options.GetOption;
 import io.etcd.jetcd.options.PutOption;
+import io.etcd.jetcd.watch.WatchEvent;
 import lombok.extern.slf4j.Slf4j;
 
 import java.nio.charset.StandardCharsets;
@@ -19,8 +20,6 @@ import java.time.Duration;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
 
@@ -30,37 +29,26 @@ import java.util.stream.Collectors;
  *  @see <a href = "https://etcd.io/docs/v3.6/learning/api/">相关API</a>
  */
 @Slf4j
-public class EtcdRegistry implements Registry{
+public class EtcdRegistry implements Registry {
     private Client client;
     private KV kvClient;
 
     private Set<String> localRegisterNodeKeySet = new HashSet<>();
 
     /**
+     * 本地缓存
+     */
+    private final RegistryServiceCache registryServiceCache = new RegistryServiceCache();
+
+    /**
      * 根节点
      */
     private static final String ETCD_ROOT_PATH = "/rpc/";
-    public static void main(String[] args) throws ExecutionException, InterruptedException {
-        Client client = Client.builder().endpoints("http://localhost:2379").build();
 
-        KV kvClient = client.getKVClient();
-        ByteSequence key = ByteSequence.from("test_key".getBytes());
-        ByteSequence value = ByteSequence.from("test_value".getBytes());
-
-        // put the key-value
-        kvClient.put(key, value).get();
-
-        // get the CompletableFuture
-        CompletableFuture<GetResponse> getFuture = kvClient.get(key);
-
-        System.out.println(kvClient.get(key).get());
-
-        // get the value from CompletableFuture
-        GetResponse response = getFuture.get();
-
-        // delete the key
-        kvClient.delete(key).get();
-    }
+    /**
+     * 监听集合(使用ConcurrentHashSet防止重复)
+     */
+    private final Set<String> watchingKeySet = new ConcurrentHashSet<>();
 
     /**
      * 初始化
@@ -123,6 +111,11 @@ public class EtcdRegistry implements Registry{
      */
     @Override
     public List<ServiceMetaInfo> serviceDiscovery(String serviceKey){
+        //优先从缓存中获取服务
+        List<ServiceMetaInfo> serviceMetaInfos = registryServiceCache.readCache();
+        if (serviceMetaInfos != null) {
+            return serviceMetaInfos;
+        }
         //前缀搜索，结尾一定要加/
         String searchPrefix = ETCD_ROOT_PATH+ serviceKey + "/";
         GetOption getOption = GetOption.builder().isPrefix(true).build();
@@ -134,10 +127,16 @@ public class EtcdRegistry implements Registry{
                     .get()
                     .getKvs();
             //解析服务信息
-            return keyValues.stream().map(keyValue ->{
+            List<ServiceMetaInfo> serviceMetaInfoList = keyValues.stream()
+                    .map(keyValue -> {
+                String key = keyValue.getKey().toString(StandardCharsets.UTF_8);
                 String value = keyValue.getValue().toString(StandardCharsets.UTF_8);
-                return JSONUtil.toBean(value,ServiceMetaInfo.class);
+                watch(key);
+                return JSONUtil.toBean(value, ServiceMetaInfo.class);
             }).collect(Collectors.toList());
+            registryServiceCache.writeCache(serviceMetaInfoList);
+
+            return serviceMetaInfoList;
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -205,5 +204,29 @@ public class EtcdRegistry implements Registry{
         //支持秒级别的任务
         CronUtil.setMatchSecond(true);
         CronUtil.start();
+    }
+
+    @Override
+    public void watch(String serviceNodeKey) {
+        Watch watchClient = client.getWatchClient();
+        //之前未被监听，开启监听
+        boolean newWatch = watchingKeySet.add(serviceNodeKey);
+        if(newWatch){
+            watchClient.watch(ByteSequence.from(serviceNodeKey, StandardCharsets.UTF_8), response ->{
+               for (WatchEvent event : response.getEvents()){
+                   switch (event.getEventType()){
+                       //key删除时出发
+                       case DELETE:
+                           //清理注册缓存
+                           registryServiceCache.clearCache();
+                           break;
+                       //其他情况不做任何处理
+                       case PUT:
+                       default:
+                           break;
+                   }
+               }
+            });
+        }
     }
 }

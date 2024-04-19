@@ -1,10 +1,6 @@
 package com.deng.drpc.registry;
 
-import com.deng.drpc.config.RegistryConfig;
-import com.deng.drpc.model.ServiceMetaInfo;
 import com.deng.spi.SpiLoader;
-
-import java.util.List;
 
 public class RegistryFactory{
     static {
